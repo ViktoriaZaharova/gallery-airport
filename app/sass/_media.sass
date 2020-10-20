@@ -1,0 +1,290 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .list-social
+    margin: 0 0 0 26px
+    li
+      margin: 0 26px 0 0
+      &:last-child
+        margin: 0
+
+  .information-box
+    width: 200px
+    height: 200px
+
+  .subscribe-box
+    width: 350px
+    h3
+      font-size: 16px
+      margin: 0 0 30px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .address
+    font-size: 16px
+    p
+      max-width: 190px
+
+  .logo
+    max-width: 150px
+
+  .links-border
+    font-size: 14px
+    width: 125px
+    height: 45px
+
+  .item-links
+    width: 26px
+    height: 26px
+    padding: 5px
+
+  .schedule-line
+    font-size: 14px
+
+  .menu li a
+    font-size: 16px
+    padding: 15.5px 12.5px
+
+  h1
+    font-size: 30px
+
+  .shops-box
+    width: 24%
+    display: none
+    margin: 0
+    &:nth-child(-n+4)
+      display: flex
+
+  .shops
+    margin: 40px 0
+
+  .information-box
+    width: 48%
+    margin: 0 0 30px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .subscribe-box
+    width: 48%
+    margin: 0 0 30px
+    .icon-svg
+      width: 100px
+      height: 100px
+
+  .information-section
+    margin: 0 0 30px
+
+@media only screen and (max-width : 940px)
+  .about-content
+    width: 53%
+
+  .about-img
+    width: 47%
+    height: auto
+    img
+      position: relative
+      width: 100%
+      height: 100%
+      object-fit: cover
+      top: 0
+      transform: none
+
+  footer
+    font-size: 14px
+    .address, .phone
+      font-size: 14px
+    .list-social
+      li
+        margin: 0 10px 0 0
+        a
+          padding: 4px
+          width: 22px
+          height: 22px
+    .phone
+      margin: 0 0 10px
+
+  .box-social p
+    margin: 0 0 10px
+
+@media only screen and (max-width : 768px)
+  .schedule-line, header .address, header .header-box, .header-bottom
+    display: none
+
+  .btn-burger
+    display: flex
+    order: 1
+
+  .logo
+    order: 1
+    margin: 0 auto
+    max-width: 104px
+    .img-pc
+      display: none
+    .img-mobile
+      display: block
+
+  .header-center
+    padding: 17px 0
+
+  .main
+    padding: 20px 0
+    min-height: 250px
+
+  .category
+    flex-wrap: wrap
+    li
+      width: 24%
+      flex: none
+      margin: 0 0 14px
+
+  .events-box__img
+    height: 300px
+
+  .events-box
+    margin: 0 0 24px
+
+  .events-name
+    font-size: 16px
+
+  .events-date
+    margin: 6px auto 9px
+    height: 20px
+    font-size: 12px
+
+  .events-tag
+    height: 17px
+    font-size: 14px
+
+  .line-title
+    margin: 0 0 12px
+
+  .shops-box
+    height: 150px
+
+  .subscribe-box
+    padding: 20px 20px 20px 60px
+    .icon-svg
+      width: 50px
+      height: 50px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 680px)
+  footer
+    padding: 10px 0
+    font-size: 10px
+    .address, .phone
+      font-size: 10px
+
+@media only screen and (max-width : 575px)
+  .events-box
+    width: 48%
+    &:last-child
+      display: none
+
+  .events-date
+    font-size: 9px
+
+  .events-name
+    font-size: 11px
+
+  .events-tag
+    font-size: 10px
+
+  .events-box__img
+    height: 250px
+
+  .about-content
+    padding: 9px 11px 10px
+    p
+      font-size: 12px
+    .btn
+      max-width: 87px
+      margin: 10px 0 0
+
+  .btn
+    font-size: 10px
+    height: 24px
+
+  .shops-box
+    height: auto
+    width: 22.5%
+
+  .shops
+    margin: 24px 0
+
+  .links .icon-svg
+    width: 10px
+    height: 9px
+    margin: 0 0 0 9px
+
+@media only screen and (max-width : 520px)
+  footer .container
+    flex-direction: column
+    align-items: center
+    .box-contacts
+      margin: 0 auto 20px
+      text-align: center
+    .phone
+      margin: 0 0 7px
+
+  .box-social
+    margin: 0 auto 20px
+
+@media only screen and (max-width : 480px)
+  .links-border
+    width: 48px
+    height: 39px
+    font-size: 9px
+
+  h1
+    font-size: 14px
+    max-width: 152px
+    width: 100%
+    line-height: 16px
+
+  .main
+    min-height: 175px
+    margin: 0 0 14px
+
+  .category
+    li
+      a
+        height: 65px
+        padding: 15px 10px 10px
+        font-size: 9px
+        line-height: normal
+        .icon-svg
+          width: 32px
+          height: 17px
+          margin: 0 auto 10px
+
+  h2, .links
+    font-size: 12px
+
+  .events-box__img
+    height: 191px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 420px)
+  .about-content p
+    font-size: 9px
+
+  .information-box
+    height: 150px
+
+  .subscribe-box
+    padding: 20px
+    .icon-svg
+      display: none
+    h3
+      margin: 0 0 10px
+      font-size: 11px
+
+  .information-section
+    padding-bottom: 0
