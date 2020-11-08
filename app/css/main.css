@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -88,7 +89,6 @@ a {
     outline: none; }
 
 .container {
-  max-width: 1210px;
   width: 100%;
   padding: 0 15px;
   display: -webkit-box;
@@ -130,7 +130,8 @@ h2 {
   font-weight: bold; }
 
 header {
-  background: #fff; }
+  background: #fff;
+  border-bottom: 1px solid #DDDDDD; }
 
 .schedule-line {
   background: #00B4C2;
@@ -143,7 +144,8 @@ header {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    display: none; }
   .schedule-line .icon-svg {
     width: 20px;
     height: 20px;
@@ -203,10 +205,12 @@ header {
   text-align: center;
   width: 143px;
   height: 54px;
-  border: 3px solid #00B4C2; }
+  border: 3px solid #00B4C2;
+    border-radius: 30px; }
   .links-border:hover {
     background: #00B4C2;
-    color: #fff; }
+    color: #fff;
+    border-radius: 30px; }
 
 .item-links {
   display: -webkit-box;
@@ -297,7 +301,6 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 180, 194, 0.56);
     mix-blend-mode: color; }
 
 .category {
@@ -553,7 +556,11 @@ header {
     top: 50%;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
-    right: 0; }
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .shops {
   margin: 64px 0; }
@@ -760,6 +767,118 @@ footer {
       font-size: 13px;
       color: #fff; }
 
+.main-regulations {
+  background: url("../img/bg2.png") no-repeat center;
+    background-size: cover;
+  padding: 43px 0; }
+  .main-regulations h1 {
+    margin: 205px 0 0; }
+  .main-regulations:before {
+    background-blend-mode: soft-light;
+    background: rgba(0, 180, 194, 0.2); }
+  .main-regulations:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.48);
+    background-blend-mode: darken; }
+  .main-regulations > * {
+    position: relative;
+    z-index: 1; }
+
+.regulations-section {
+  margin: 63px 0 80px;
+  font-size: 18px;
+  line-height: 197.19%; }
+  .regulations-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 30px;
+    width: 100%; }
+  .regulations-section ul {
+    margin: 0 0 30px; }
+    .regulations-section ul:last-child {
+      margin: 0; }
+
+.list-dots {
+  display: block; }
+  .list-dots li:before {
+    content: '•';
+    display: inline-block;
+    margin: 0 10px 0 0; }
+
+.row {
+  margin: 0 -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.w-100 {
+  width: 100%; }
+
+.col-2 {
+  width: 16.6%;
+  padding: 0 10px; }
+
+.shops-page {
+  margin: 38px 0 93px; }
+
+.shops-category {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 100px;
+  margin: 0 0 43px; }
+
+.shops-category__links {
+  color: #1F1F1F;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 13px;
+  margin: 0 10px 10px; }
+  .shops-category__links:hover {
+    color: #fff;
+    background: #00B4C2; }
+
+.shops-logo {
+  margin: 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 180px; }
+  .shops-logo:hover {
+    -webkit-box-shadow: 0px 3px 16px -3px #999797;
+            box-shadow: 0px 3px 16px -3px #999797; }
+  .shops-logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px) {
@@ -779,6 +898,11 @@ footer {
       margin: 0 0 30px; } }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px) {
+  .menu li a {
+    font-size: 16px;
+    padding: 15.5px 12.5px; } }
+
 @media only screen and (max-width: 992px) {
   .address {
     font-size: 16px; }
@@ -796,9 +920,6 @@ footer {
     padding: 5px; }
   .schedule-line {
     font-size: 14px; }
-  .menu li a {
-    font-size: 16px;
-    padding: 15.5px 12.5px; }
   h1 {
     font-size: 30px; }
   .shops-box {
@@ -826,7 +947,17 @@ footer {
       width: 100px;
       height: 100px; }
   .information-section {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+  .shops-logo {
+    height: 150px; }
+  .shops-category {
+    padding: 0;
+    margin: 0 0 20px; }
+  .shops-category__links {
+    padding: 2px 5px;
+    font-size: 16px; }
+  .shops-page {
+    margin: 30px 0 40px; } }
 
 @media only screen and (max-width: 940px) {
   .about-content {
@@ -856,7 +987,12 @@ footer {
     footer .phone {
       margin: 0 0 10px; }
   .box-social p {
-    margin: 0 0 10px; } }
+    margin: 0 0 10px; }
+  .menu li a {
+    font-size: 14px;
+    padding: 13.5px 4.5px; }
+  .col-2 {
+    width: 20%; } }
 
 @media only screen and (max-width: 768px) {
   .schedule-line, header .address, header .header-box, .header-bottom {
@@ -913,7 +1049,9 @@ footer {
     padding: 20px 20px 20px 60px; }
     .subscribe-box .icon-svg {
       width: 50px;
-      height: 50px; } }
+      height: 50px; }
+  .col-2 {
+    width: 25%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px) {
@@ -921,7 +1059,9 @@ footer {
     padding: 10px 0;
     font-size: 10px; }
     footer .address, footer .phone {
-      font-size: 10px; } }
+      font-size: 10px; }
+  .col-2 {
+    width: 33.3%; } }
 
 @media only screen and (max-width: 575px) {
   .events-box {
@@ -998,7 +1138,20 @@ footer {
   h2, .links {
     font-size: 12px; }
   .events-box__img {
-    height: 191px; } }
+    height: 191px; }
+  .main-regulations h1 {
+    margin: 100px 0 0; }
+  .regulations-section {
+    margin: 40px 0;
+    line-height: 1.4;
+    font-size: 12px; }
+    .regulations-section h3 {
+      margin: 0 0 20px;
+      font-size: 16px; }
+    .regulations-section ul {
+      margin: 0 0 25px; }
+  .col-2 {
+    width: 50%; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

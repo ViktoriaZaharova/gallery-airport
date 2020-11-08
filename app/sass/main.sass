@@ -129,6 +129,7 @@ h2
 //header
 header
   background: #fff
+  border-bottom: 1px solid #DDDDDD
 
 .schedule-line
   background: $accent
@@ -599,6 +600,101 @@ footer
       text-align: center
       font-size: 13px
       color: #fff
+
+//page regulations
+.main-regulations
+  background: url("../img/bg2.png") no-repeat center
+    size: cover
+  padding: 43px 0
+  h1
+    margin: 205px 0 0
+  &:before
+    background-blend-mode: soft-light
+    background: rgba(#00B4C2, .2)
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.48)
+    background-blend-mode: darken
+  >*
+    position: relative
+    z-index: 1
+
+.regulations-section
+  margin: 63px 0 80px
+  font-size: 18px
+  line-height: 197.19%
+  h3
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 30px
+    width: 100%
+  ul
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.list-dots
+  display: block
+  li
+    &:before
+      content: '•'
+      display: inline-block
+      margin: 0 10px 0 0
+
+.row
+  margin: 0 -10px
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+
+.w-100
+  width: 100%
+
+.col-2
+  width: 16.6%
+  padding: 0 10px
+
+//shops-page
+.shops-page
+  margin: 38px 0 93px
+
+.shops-category
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  padding: 0 100px
+  margin: 0 0 43px
+
+.shops-category__links
+  color: #1F1F1F
+  font-size: 18px
+  font-weight: bold
+  padding: 4px 13px
+  margin: 0 10px 10px
+  &:hover
+    color: #fff
+    background: #00B4C2
+
+.shops-logo
+  margin: 0 0 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 180px
+  &:hover
+    box-shadow: 0px 3px 16px -3px #999797
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 @import "media"
 // Всегда в конце
