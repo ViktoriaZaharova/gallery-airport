@@ -682,6 +682,10 @@ footer
     color: #fff
     background: #00B4C2
 
+.shops-category__links.active
+  color: #fff
+  background: #00B4C2
+
 .shops-logo
   margin: 0 0 20px
   display: flex
@@ -695,6 +699,133 @@ footer
     width: 100%
     height: 100%
     object-fit: cover
+
+//main-shop
+.main-shop
+  background: url("../img/bg3.png") no-repeat center
+    size: cover
+  padding: 0
+  &:before
+    background: rgba(0, 0, 0, 0.48)
+    background-blend-mode: darken
+    mix-blend-mode: normal
+  h1
+    line-height: 197.19%
+    margin: 268px 0 0
+
+.main-shop__page
+  margin: 58px 0 128px
+  width: 100%
+
+
+.main-shop__page-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  width: 100%
+
+.main-shop__page-content
+  width: calc(100% - 350px)
+  padding: 0 50px 0 0
+  .box-text
+    font-size: 18px
+    line-height: 197.19%
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+.main-shop__page-info
+  width: 350px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.links-next
+  display: flex
+  align-items: center
+  margin: 35px 0 0
+  color: #1F1F1F
+  font-size: 18px
+
+.links-next__text
+  text-decoration: underline
+
+.links-next__icon
+  min-width: 17px
+  width: 17px
+  height: 11px
+  margin: 0 17px 0 0
+
+.fill-none
+  fill: none
+
+.main-shop__page-info-img
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 60px
+  width: 118px
+
+.floor-shop
+  display: flex
+  align-items: center
+  text-align: center
+  justify-content: space-between
+  background: #DDDDDD
+  width: 114px
+  height: 35px
+  color: #6A6A6A
+  font-size: 18px
+  padding: 0 10px
+  margin: 0 0 29px
+  .links-next__icon
+    width: 27px
+    height: 12px
+    margin: 0
+    stroke: #1F1F1F
+
+.schedule-shop
+  font-size: 18px
+  font-weight: 500
+  .icon-svg
+    width: 22px
+    height: 22px
+    margin: 0 26px 0 0
+    fill: #1F1F1F
+  p, a
+    margin: 0 0 10px
+
+  a
+    color: #1F1F1F
+    &:last-child
+      margin: 0
+  .schedule-shop__site
+    color: #00B4C2
+    span
+      text-decoration: underline
+
+//main-news
+.main-news
+  background: url("../img/bg4.png") no-repeat center
+    size: cover
+  h1
+    text-transform: none
+
+.main-news__page
+  margin: 56px 0 149px
+  .box-text
+    line-height: 197.19%
+    font-size: 18px
+    p
+      margin: 0 0 35px
+      &:last-child
+        margin: 0
+
+.color-accent
+  color: $accent
+  .links-next__icon
+    stroke: $accent
 
 @import "media"
 // Всегда в конце
