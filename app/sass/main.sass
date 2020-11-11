@@ -126,6 +126,27 @@ h2
   font-size: 24px
   font-weight: bold
 
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 18px
+  font-weight: bold
+  height: 39px
+
+.btn-border
+  color: #fff
+  border: 1px solid #FFFFFF
+  width: 100%
+  &:hover
+    background: #fff
+    color: $accent
+
+.btn-accent
+  background: $accent
+  color: #fff
+  height: 47px
+
 //header
 header
   background: #fff
@@ -400,21 +421,7 @@ header
     margin: 30px 0 0
     max-width: 128px
 
-.btn
-  display: flex
-  align-items: center
-  justify-content: center
-  font-size: 18px
-  font-weight: bold
-  height: 39px
 
-.btn-border
-  color: #fff
-  border: 1px solid #FFFFFF
-  width: 100%
-  &:hover
-    background: #fff
-    color: $accent
 
 .about-img
   width: calc(100% - 380px)
@@ -779,11 +786,24 @@ footer
   font-size: 18px
   padding: 0 10px
   margin: 0 0 29px
+  transition: .3s ease
   .links-next__icon
     width: 27px
     height: 12px
     margin: 0
-    stroke: #1F1F1F
+    stroke: #6A6A6A
+    transition: .3s ease
+  &:hover
+    background: $accent
+    color: #fff
+    .links-next__icon
+      stroke: #fff
+  &:focus
+    box-shadow: inset 0px 4px 7px -2px rgba(0, 0, 0, 0.25)
+    background: $accent
+    color: #fff
+    .links-next__icon
+      stroke: #fff
 
 .schedule-shop
   font-size: 18px
@@ -826,6 +846,98 @@ footer
   color: $accent
   .links-next__icon
     stroke: $accent
+
+//about
+.main-about
+  background: url("../img/bg5.png") no-repeat center
+    size: cover
+
+.address-company-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 27px 0 0
+
+.address-box-company
+  color: #1F1F1F
+  font-size: 18px
+  max-width: 350px
+  width: 100%
+  line-height: 197.19%
+  margin: 0 0 30px
+  h3
+    font-weight: bold
+    margin: 0 0 10px
+  a
+    margin: 0 0 10px
+    color: #1F1F1F
+  .btn
+    margin: 40px 0 0
+    max-width: 274px
+    color: #fff
+
+
+//contacts
+.contacts-page
+  padding: 111px 0
+  position: relative
+
+.map
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+  iframe
+    width: 100%
+    height: 100%
+
+.contacts-info
+  background: #ffffff
+  max-width: 480px
+  width: 100%
+  height: 731px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 48px 50px 42px
+  h1
+    font-size: 36px
+    margin: 0 0 22px
+  .btn-border
+    max-width: 213px
+    height: 47px
+    border-color: $accent
+    color: $accent
+    .icon-svg
+      stroke: $accent
+      width: 27px
+      height: 12px
+      margin: 0 0 0 10px
+
+.contacts-info__box
+  margin: 0 0 30px
+  font-size: 18px
+  line-height: 197.19%
+  h3
+    font-weight: bold
+
+.contacts-info__footer
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: auto 0 46px
+
+.contacts-info__item
+  font-size: 18px
+  line-height: 197.19%
+  a
+    color: #1F1F1F
+    font-weight: bold
 
 @import "media"
 // Всегда в конце
