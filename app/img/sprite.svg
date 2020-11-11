@@ -150,5 +150,9 @@
         <path d="M13.0657 0V1.48904H19.458L7.69995 13.2472L8.75279 14.3L20.5109 2.54192V8.93421H22V0H13.0657Z" fill="#1F1F1F"/>
     </symbol>
 
+    <symbol id="view" viewBox="0 0 21 17" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4115 8.30226C13.4115 10.0483 11.9955 11.4633 10.2495 11.4633C8.5035 11.4633 7.0885 10.0483 7.0885 8.30226C7.0885 6.55526 8.5035 5.14026 10.2495 5.14026C11.9955 5.14026 13.4115 6.55526 13.4115 8.30226Z" stroke="#00B4C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z" stroke="#00B4C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 
 </svg>
