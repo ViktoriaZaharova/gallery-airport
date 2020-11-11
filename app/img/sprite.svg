@@ -155,4 +155,9 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.248 15.604C14.056 15.604 17.539 12.866 19.5 8.302C17.539 3.738 14.056 1 10.248 1H10.252C6.444 1 2.961 3.738 1 8.302C2.961 12.866 6.444 15.604 10.252 15.604H10.248Z" stroke="#00B4C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="close" viewBox="0 0 30 30">
+        <line x1="22.2737" y1="7.4246" x2="7.42448" y2="22.2738" stroke="#999797"/>
+        <line x1="22.2736" y1="22.2738" x2="7.4244" y2="7.4246" stroke="#999797"/>
+    </symbol>
+
 </svg>

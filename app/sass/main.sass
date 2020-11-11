@@ -1004,6 +1004,223 @@ footer
 .main-tenant__body
   max-width: 380px
 
+.modal__div
+  position: fixed
+  max-width: 780px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__close
+  position: absolute
+  right: 10px
+  top: 10px
+  width: 21px
+  height: 21px
+  cursor: pointer
+
+.modal__wrapper
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 50px auto
+  box-sizing: border-box
+  position: relative
+  background: #fff
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  -moz-opacity: 0.8
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.modal-div__content
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.modal-div__box
+  width: 50%
+  padding: 52px 40px 39px
+  min-height: 632px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  line-height: 197.19%
+  font-size: 18px
+  .btn
+    max-width: 186px
+    margin: auto 0 0
+
+.modal-div__box-title
+  font-size: 24px
+  font-weight: bold
+  margin: 0 0 50px
+
+  color: #200E32
+
+.bg-blue
+  background: $accent
+  color: #fff
+  .modal-div__box-title
+    color: #fff
+
+.btn-border-accent
+  color: $accent
+  border-color: $accent
+
+.checkbox
+  display: flex
+  align-items: center
+  color: #1F1F1F
+  font-size: 18px
+  cursor: pointer
+
+.checkbox-inp
+  display: none
+
+.checkbox-custom
+  transition: .3s ease
+  margin: 0 17px 0 0
+  width: 21px
+  height: 21px
+  min-width: 21px
+  border: 1px solid #999797
+  background: #ffffff
+  box-sizing: border-box
+
+.checkbox-inp:checked + .checkbox-custom
+  background: $accent
+
+.modal-div__form
+  padding: 40px 51px 43px
+  h3
+    margin: 0 0 34px
+    width: 100%
+    font-size: 24px
+    font-weight: bold
+
+.form
+  width: 100%
+
+input
+  outline: none
+  box-sizing: border-box
+  border: 1px solid #999797
+  height: 48px
+  width: 100%
+  padding: 0 10px
+  font-family: $default-font
+  font-size: 16px
+
+textarea
+  padding: 10px
+  font-size: 16px
+  font-family: $default-font
+  box-sizing: border-box
+  outline: none
+  border: 1px solid #999797
+    radius: 0
+  width: 100%
+  height: 118px
+
+label
+  display: block
+  margin: 0 0 25px
+  width: 100%
+
+.input-title
+  font-size: 18px
+  display: block
+  margin: 0 0 15px
+  span
+    color: #999797
+    font-size: 14px
+
+.form-group
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  h4
+    margin: 0 0 15px
+    line-height: 197.19%
+    font-size: 18px
+    max-width: 460px
+    width: 100%
+
+.list-checkbox
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  li
+    width: 40%
+
+.w-50
+  width: 48%
+
+.w-40
+  width: 44%
+
+.w-60
+  width: 53%
+
+button
+  outline: none
+  border: none
+  box-sizing: border-box
+  cursor: pointer
+  width: 100%
+
+.file-label
+  position: relative
+  border: 1px solid #999797
+  height: 48px
+  display: flex
+  align-items: stretch
+  cursor: pointer
+
+.btn-file
+  color: #999797
+  font-size: 18px
+  border-left: 1px solid #999797
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 107px
+  background: #DDDDDD
+  margin: 0 0 0 auto
+
+.input-file-text
+  width: calc(100% - 107px)
+  padding: 0 17px
+  color: #999797
+  display: flex
+  align-items: center
+
+input[type="file"]
+  display: none
 
 @import "media"
 // Всегда в конце

@@ -189,7 +189,9 @@
 
                 <div class="line-wrapper">
                     <a href="#" class="btn btn-border btn-view">
-                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#view"></use></svg>
+                        <svg class="icon-svg">
+                            <use xlink:href="img/sprite.svg#view"></use>
+                        </svg>
                         Презентация рекламных возможностей ТЦ
                     </a>
                     <a href="#modal__call" class="btn btn-accent open_modal">Оставить заявку</a>
@@ -255,6 +257,252 @@
         <div class="copyright">© ТК «Галерея Аэропорт», 2020</div>
     </div>
 </footer>
+
+<div class="modal__div" id="modal__call">
+    <div class="modal__wrapper">
+        <span class="modal__close"><svg class="icon-svg"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+        <div class="modal-div__content">
+            <div class="modal-div__box bg-blue">
+                <div class="modal-div__box-title">Аренда торговых площадей</div>
+                <div class="box-text">
+                    <p>Вы хотели бы сотрудничать с нами и открыть в ТЦ «Галерея Аэропорт» магазин? Не откладывайте свои
+                        планы и направляйте нам вашу информацию.</p>
+                </div>
+
+                <a href="#modal1" class="btn btn-border open_modal">Заполнить форму</a>
+            </div>
+            <div class="modal-div__box">
+                <div class="modal-div__box-title">Аренда рекламных площадей</div>
+                <div class="box-text">
+                    <p>Вы хотели бы свою рекламу
+                        в нашем ТЦ? Для получения более подробной информации и сведений о тех возможностях, которые мы
+                        предлагаем, заполните нашу форму.</p>
+                </div>
+                <a href="#modal2" class="btn btn-border btn-border-accent open_modal">Заполнить форму</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div" id="modal1">
+    <div class="modal__wrapper">
+        <div class="modal-div__form">
+            <h3>Заявка на аренду торговой площади</h3>
+
+            <form method="post" class="form">
+                <label>
+                    <span class="input-title">Название компании</span>
+                    <input type="text" name="name_company">
+                </label>
+                <div class="form-group">
+                    <label class="w-40">
+                        <span class="input-title">Вид деятельности</span>
+                        <input type="text" name="name_company">
+                    </label>
+                    <label class="w-60">
+                        <span class="input-title">Торговая марка</span>
+                        <input type="text" name="name_company">
+                    </label>
+                </div>
+
+                <label>
+                    <span class="input-title">Местонахождение существующих точек</span>
+                    <textarea name="message"></textarea>
+                </label>
+
+                <div class="form-group">
+                    <label class="w-40">
+                        <span class="input-title">Желаемый размер площади (м2)</span>
+                        <input type="text" name="name_company">
+                    </label>
+                    <label class="w-60">
+                        <span class="input-title">Желаемый этаж</span>
+                        <input type="text" name="name_company">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label class="w-50">
+                        <span class="input-title">Желаемая дата начала аренды</span>
+                        <input type="text" name="date1">
+                    </label>
+                    <label class="w-50">
+                        <span class="input-title">Желаемая дата окончания аренды</span>
+                        <input type="text" name="date2">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <h4>Заинтересованы ли Вы в аренде торговых площадей в других объектах
+                        ФПК «Гарант-Инвест»?</h4>
+
+                    <ul class="list-checkbox">
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТЦ «Ритейл Парк»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТК «Пражский Град»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТДК «Тульский»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТРК «Москворечье»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТЦ «Коломенский»</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-group">
+                    <label class="w-40">
+                        <span class="input-title">Контактное лицо</span>
+                        <input type="text" name="name_company">
+                    </label>
+                    <label class="w-60">
+                        <span class="input-title">Телефон</span>
+                        <input type="text" name="name_company">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label class="w-40">
+                        <span class="input-title">Электронная почта</span>
+                        <input type="text" name="name_company">
+                    </label>
+                    <div class="w-60">
+                        <span class="input-title">Ваша презентация <span>(ppt, pptx, pdf, doc, docx)</span></span>
+                        <label class="file-label">
+                            <input type="file" name="file" multiple>
+                            <span class="input-file-text">Файл не выбран</span>
+                            <span class="btn-file">Обзор...</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-accent">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal__div" id="modal2">
+    <div class="modal__wrapper">
+        <div class="modal-div__form">
+            <h3>Заявка на аренду рекламной площади</h3>
+
+            <form method="post" class="form">
+                <label>
+                    <span class="input-title">Название компании</span>
+                    <input type="text" name="name_company">
+                </label>
+                <label>
+                    <span class="input-title">Торговая марка</span>
+                    <input type="text" name="name_company">
+                </label>
+
+                <label>
+                    <span class="input-title">Наименование интересующих рекламных услуг</span>
+                    <textarea name="message"></textarea>
+                </label>
+
+                <div class="form-group">
+                    <label class="w-50">
+                        <span class="input-title">Желаемая дата начала аренды</span>
+                        <input type="text" name="date1">
+                    </label>
+                    <label class="w-50">
+                        <span class="input-title">Желаемая дата окончания аренды</span>
+                        <input type="text" name="date2">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <h4>Заинтересованы ли Вы в аренде торговых площадей в других объектах
+                        ФПК «Гарант-Инвест»?</h4>
+
+                    <ul class="list-checkbox">
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТЦ «Ритейл Парк»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТК «Пражский Град»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТДК «Тульский»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТРК «Москворечье»</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">ТЦ «Коломенский»</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-group">
+                    <label class="w-40">
+                        <span class="input-title">Контактное лицо</span>
+                        <input type="text" name="name_company">
+                    </label>
+                    <label class="w-60">
+                        <span class="input-title">Телефон</span>
+                        <input type="text" name="name_company">
+                    </label>
+                </div>
+
+                <label>
+                    <span class="input-title">Электронная почта</span>
+                    <input type="text" name="name_company">
+                </label>
+
+                <button type="submit" class="btn btn-accent">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay"></div><!-- Пoдлoжкa -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
