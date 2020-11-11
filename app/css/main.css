@@ -1703,7 +1703,15 @@ input[type="file"] {
   .main-shop__page-info {
     width: 250px; }
   .main-shop__page-content {
-    width: calc(100% - 250px); } }
+    width: calc(100% - 250px); }
+  .form-search {
+    max-width: 350px; }
+    .form-search input {
+      height: 26px; }
+    .form-search button {
+      height: 26px;
+      width: 26px;
+      padding: 5px; } }
 
 @media only screen and (max-width: 940px) {
   .about-content {
