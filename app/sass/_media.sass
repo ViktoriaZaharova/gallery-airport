@@ -26,6 +26,13 @@
 
   .main-tenant__icon
     margin: 0 20px 0 0
+
+  .schema-img
+    max-width: 400px
+
+  .schema-content
+    width: calc(100% - 400px)
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px)
   .menu li a
@@ -153,6 +160,17 @@
 
   .main-tenant__wrapper .main-shop__page-content
     padding: 0 20px 0 0
+
+  .schema-content
+    font-size: 16px
+    padding: 0 0 0 30px
+
+@media only screen and (max-width : 850px)
+  .schema-img
+    max-width: 320px
+
+  .schema-content
+    width: calc(100% - 320px)
 
 @media only screen and (max-width : 768px)
   .schedule-line, header .address, header .header-box, .header-bottom
@@ -301,6 +319,18 @@
     margin: 0 0 10px
     span
       font-size: 14px
+
+  .schema-img
+    max-width: none
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+
+  .schema-content
+    width: 100%
+    padding: 0
+    margin: 30px 0 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 680px)
@@ -467,3 +497,10 @@
 
   .information-section
     padding-bottom: 0
+
+  .schema-box
+    width: 100%
+    margin: 0 0 20px
+
+  .list-schema
+    margin: 0 0 20px

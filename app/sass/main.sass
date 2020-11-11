@@ -1222,5 +1222,55 @@ button
 input[type="file"]
   display: none
 
+.schema-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.schema-img
+  width: 627px
+
+.schema-content
+  width: calc(100% - 627px)
+  padding: 0 0 0 65px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: flex-start
+  font-size: 18px
+  font-weight: 500
+
+.list-schema
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+  li
+    margin: 0 0 15px
+    display: flex
+    align-items: center
+    transition: .3s ease
+    cursor: pointer
+    &:last-child
+      margin: 0
+    &:hover
+      color: $accent
+      .number
+        color: $accent
+  .active
+    color: $accent
+    .number
+      color: $accent
+  .number
+    color: #999797
+    margin: 0 5px 0 0
+
+
+
+.schema-box
+  margin: 0 36px 0 0
+  &:last-child
+    margin: 0
+
 @import "media"
 // Всегда в конце
