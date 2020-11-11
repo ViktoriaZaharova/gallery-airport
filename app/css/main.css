@@ -1586,6 +1586,33 @@ input[type="file"] {
   .schema-box:last-child {
     margin: 0; }
 
+.search-wrapper {
+  position: relative; }
+
+.form-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 548px;
+  display: none; }
+  .form-search input {
+    border: 3px solid #00B4C2;
+      border-radius: 47px;
+    height: 45px; }
+  .form-search label {
+    margin: 0; }
+  .form-search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #00B4C2;
+    padding: 10px; }
+    .form-search button .icon-svg {
+      fill: #fff; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px) {

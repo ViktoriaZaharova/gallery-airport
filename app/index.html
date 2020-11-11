@@ -95,11 +95,21 @@
             <a href="#" class="links-border">СХЕМА ТК</a>
 
             <div class="header-box">
-                <a href="#" class="item-links">
-                    <svg class="icon-svg">
-                        <use xlink:href="img/sprite.svg#search"></use>
-                    </svg>
-                </a>
+                <div class="search-wrapper">
+                    <form method="post" class="form-search">
+                        <label><input type="text" name="search" required></label>
+                        <button type="submit"><svg class="icon-svg">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg></button>
+                    </form>
+
+                    <a href="#" class="item-links btn-search">
+                        <svg class="icon-svg">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                    </a>
+                </div>
+
 
                 <ul class="list-social">
                     <li><a href="#" class="item-links">

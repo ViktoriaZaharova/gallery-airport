@@ -42,3 +42,16 @@ $(document).ready(function () {
     });
 });
 //end
+
+$('.btn-search').click(function (e) {
+    e.preventDefault();
+    $('.form-search').fadeIn();
+});
+
+$(document).mouseup(function (e) { // событие  увода мыши
+    var div = $(".form-search"); // тут указываем ID элемента
+    if (!div.is(e.target) // если увели мышку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.fadeOut();
+    }
+});
